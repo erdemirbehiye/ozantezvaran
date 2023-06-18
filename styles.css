@@ -1,0 +1,147 @@
+body {
+    font-family: "Switzer Complete", sans-serif;
+    color: #333;
+  }
+
+  @font-face {
+    font-family: "Switzer Complete";
+    src: url("./Switzer_Complete/Fonts/WEB/fonts/Switzer-Regular.woff2") format("woff2"),
+         url("./Switzer_Complete/Fonts/WEB/fonts/Switzer-Regular.woff") format("woff");
+  }
+
+  .empty{
+    height:1px;
+    margin-top: 20px; 
+  }
+
+  .name a{
+    color: #333;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 300px 900px; /* Adjust the width of the sidebar as per your requirements */
+    grid-gap: 20px; /* Adjust the gap between the sidebar and content as per your requirements */
+  }
+  
+  .title{
+    color: #333;
+    margin-bottom: 30px;
+  }
+  .title-head{
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .title-date{
+    font-size: 15px;
+    margin-top: 3px;
+  }
+  a{
+    color: #333;
+  }
+
+  p a{
+    color:color: #333;;
+  }
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: relative;
+
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .works{
+    padding: 6px 8px 0px 16px;
+    font-size: 14px;
+    color: #333;
+    display: block;
+  }
+  .collective{
+    padding: 20px 8px 0px 20px;
+    font-size: 14px;
+    color: #333;
+    display: block;
+  }
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    display: block;
+  }
+  ul{
+    padding:0px 0px 0px 12px;
+    margin: 0;
+  }
+  li{
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+  
+  .sidenav a:hover {
+    text-decoration: underline;
+  }
+  
+  .main {
+    /* margin-left: 160px; */
+    font-size: 14px; /* Increased text to enable scrolling */
+    padding: 20px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+    
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    max-width: 70%;
+    padding: 0px;
+  }
+  
+  .column img {
+    margin-top: 15px;
+    vertical-align: middle;
+    width: 100%;
+
+  }
+
+  video{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
