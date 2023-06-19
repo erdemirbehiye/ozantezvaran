@@ -13,6 +13,10 @@ body {
     height:1px;
     margin-top: 20px; 
   }
+  iframe{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
   .name a{
     color: #333;
